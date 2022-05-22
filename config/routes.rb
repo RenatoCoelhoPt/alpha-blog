@@ -2,5 +2,5 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'about' => 'pages#about'
 
-  resources :articles, only: %i[show]
+  resources :articles, only: %i[index show]
 end
